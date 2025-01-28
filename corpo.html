@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frenesi de Lavar Pratos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container-jogo">
+    <div id="tela-inicial">
+      <h1>Frenesi de Lavar Pratos</h1>
+      <button id="botao-iniciar">Iniciar Jogo</button>
+    </div>
+    <div id="tela-jogo" style="display: none;">
+      <div id="temporizador">2:00</div>
+      <div id="pilhas-pratos">
+        <div class="pilha-pratos" id="pilha-pratos-1"></div>
+        <div class="pilha-pratos" id="pilha-pratos-2"></div>
+      </div>
+      <div id="container-comandos">
+        <div id="prato-sujo"></div>
+        <div id="caixa-comandos"></div>
+      </div>
+      <div id="pontuacao">Pontuação: 0</div>
+      <div id="mensagem-erro">Você limpou errado!</div>
+      <img class="imagem-gar" id="gar1" src="gar1.png" alt="Gar 1" style="display: none;">
+      <img class="imagem-gar" id="gar2" src="gar2.png" alt="Gar 2" style="display: none;">
+      <img class="imagem-gar" id="gar3" src="gar3.png" alt="Gar 3" style="display: none;">
+    </div>
+    <div id="tela-final" style="display: none;">
+      <h2>Fim de Jogo!</h2>
+      <p id="pontuacao-final">Sua pontuação: 0</p>
+      <button id="botao-reiniciar">Reiniciar</button>
+    </div>
+    <div id="cena-corte" style="display: none;">
+      <img class="imagem-gar" id="gar3-cena-corte" src="gar3.png" alt="Gar 3" style="display: block;">
+      <div id="caixa-dialogo">
+        Novato, o seu turno já está acabando mas ainda tem mais pratos do que nunca para lavar, aguente firme pois cada erro vai ser descontado do seu salário.
+      </div>
+    </div>
+  </div>
+  <script src="./jogo.js"></script>
+</body>
+</html>
